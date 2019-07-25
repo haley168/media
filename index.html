@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/media.css" rel="stylesheet">
+</head>
+<style>
+    /**
+* 媒体查询的写法
+  不带媒体查询的写到最上面，然后依次从小到大挨个写，这样的好处是，比如我没有写1366的屏，那么他会继承1280的，这样就不会导致样式错乱
+*/
+    p {
+        margin: 30px;
+        font-size: 20px;
+        border: 1px solid #f00;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width:1280px) {
+        p {
+            margin: 10px;
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width:1440px) {
+        p {
+            margin: 20px;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width:1680px) {
+        p {
+            margin: 24px;
+            font-size: 18px;
+        }
+    }
+</style>
+<body>
+    <p>默认设置 p{margin: 30px;font-size: 20px;margin-bottom:40px;}</p>
+    <p>min-width:1280px ：p{margin: 30px;font-size: 14px;}</p>
+    <p>min-width:1440px ：p{margin: 20px;font-size: 16px;}</p>
+    <p>min-width:1680px ：p{margin: 24px;font-size: 18px;}</p>
+    <p>这里是文章测试标题，含标点一共二十个字。</p>
+</body>
+
+</html>
