@@ -6,7 +6,7 @@
 3. 这样的好处是，比如我没有写1366px的屏，那么他会继承1280px的，这样就不会导致样式错乱
 4. 如果从大到小反着写，如果用户使用1366px屏幕，那么样式会继承1440px的，会导致页面错乱。
 ## 跨媒体系统需要的一些基本样式表及其顺序
-### base级基础样式，可以写一些基本的缩写等，比如 fz12 表示font-size:12px;ovh表示overflow:hidden;fl表示float:left;等等 也可以直接引入我的另外一个库文件 
+### base级基础样式，可以写一些基本的缩写等，比如 fz12 表示font-size:12px;ovh表示overflow:hidden;fl表示float:left;等等 也可以直接引入我的另外一个库文件 [base级样式库](https://haley168.github.io/media/)
 ### 初始化 诸如 p h系列等的margin
 ### 插件类 引入的第三方插件 诸如 bootstrap swiper等
 ### pc端基础搭建 先将pc端页面搭建完毕
