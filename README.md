@@ -14,5 +14,7 @@
 ### pc与phone的控制显示 有些特殊元素可能需为pc和wap各写一套样式，同时在pc端仅显示pc端，wap端仅显示wap的，xs-hide表示wap隐藏；sm-hide表示pc端隐藏
 ### 手机端专属样式 这个仅在wap端引入
 
-
+## 其他注意事项
+### 布局类
+pc端的左右结构布局，假如左侧是文字，右侧是图片。wap端为了显示美观通常是图片在上方，下方是文字。这样一来，pc端布局就不要使用float:left了；应该在html里先写图，再写文字，采用float:right的方式。
 # [查看demo](https://haley168.github.io/media/)
